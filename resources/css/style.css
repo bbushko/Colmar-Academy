@@ -1,9 +1,16 @@
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     width: 100%;
     position: absolute;
+    margin: 0;
 }
 
 main {
+
     position: relative;
 }
 
@@ -86,6 +93,16 @@ a:hover {
     height: 60%;
 }
 
+.start .text {
+    padding-top: 32px;
+}
+.start button {
+    border: none; 
+    outline: none;
+}
+
+
+
 .text {
     color:#3b3b3b;
     flex-wrap: wrap;
@@ -96,19 +113,26 @@ a:hover {
     font-size: 3rem;
 }
 
-.button {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    background-color:#4B4B4B;
-    
+.text h2 {
+    font-size: 2.5rem;
 }
 
-.button a {
+
+
+.text button {
+    padding: 16px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color:#4B4B4B;
+    width: 95%;
+}
+
+button a {
     color: white;
 }
 
-.button a:hover {
+button a:hover {
     color: grey;
 }
 
@@ -215,7 +239,7 @@ a:hover {
     background-color: white;
 }
 
-.container h1 {
+.container h3 {
     font-size: 1.5rem;
     padding-top: 0;
     padding-bottom: 8px;
@@ -273,6 +297,8 @@ a:hover {
 
 
 footer {
+
+    padding: 0;
     margin-top: 32px;
     position: relative;
     top: 0;
@@ -289,4 +315,118 @@ footer {
 footer ul li {
     display: inline-block;
     padding-right: 24px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px) and (orientation: landscape) {
+    .nav-bar ul li img{
+            display: none;
+    }
+    .information .mobile-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px), (orientation: portrait) {
+    body {
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    header span {
+            display: none;
+        }
+    header h1 {
+        display: none;
+    }
+
+
+    .start {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        padding-bottom: 32px;
+        text-align: left;
+        margin: 0;
+    }
+    .start .button {
+        width: 100%;
+        margin: 16px;
+    }
+    .start .banner {
+        padding: 0;
+        width: 100%;
+    }
+
+    .events {
+        margin: 0;
+        width: 100%;
+    }
+    .information .main-img {
+        display: none;
+    }
+    
+    .information .banner {
+        display: none;
+    }
+    .inf-block {
+        width: 100%;
+    }
+    .inf-block .mobile-img  {
+        width: 96%;
+    }
+   
+    .inf-block-image .text {
+        margin: 32px;
+    }
+    .inf-block-image {
+        width: 100%;
+        display: block;
+        border: none;
+        padding-bottom: 16px;
+    }
+
+
+    .container img, p {
+        display: none;
+    }
+    .learning h1 {
+        margin: 0;
+    }
+    .container {
+        background-color: rgb(212, 212, 212);
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+    .container h3 {
+        padding: 0 0 0 16px;
+        width: 100%;
+    }
+    
+
+    .exhibit .events  {
+        display: none;
+    }
+    
+    .rest .banner {
+        width: 100%;
+        margin: 0;
+        padding: 0 24px;
+    }
+   
+
+    footer ul li {
+        display: none;
+    }
+    footer h6 {
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -31,10 +31,10 @@
 
             <div class = "nav-bar">
                 <ul>
-                    <li><a href="#campus">On Campus</a></li>
-                    <li><a href="#online">Online</a></li>
-                    <li><a href="#companies">For companies</a></li>
-                    <li><a href="#sign">Sign in</a></li>
+                    <li><a href="#campus"><img src="resources/images/ic-on-campus.svg"><span>On Campus</span></a></li>
+                    <li><a href="#online"><img src="resources/images/ic-online.svg"><span>Online</span></a></li>
+                    <li><a href="#companies"><span>Companies</span></a></li>
+                    <li><a href="#sign"><img src="resources/images/ic-login.svg"><span>Sign in</span></a></li>
                 </ul>
             </div>
         </header>
@@ -46,12 +46,12 @@
                     <img src="resources/images/banner.jpg" height = "100%" width = "100%">
                 </div>
                 <div class="text">
-                    <h1>Learn something <br>new everyday</h1>
-                    <h3>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h3>
-                    <div class="button">
-                        <p><a href="#register">Start here</a></p>
-                    </div>
-                </div>
+                    <h2>Learn something new everyday</h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                    <button>
+                        <a href="#register">Start here</a>
+                    </button>
+                </div> 
             </div>
 
 
@@ -73,27 +73,30 @@
                 <div class="events">
                     <div class="inf-block">
                         <div class="inf-block-image">
-                            <img src="resources/images/information-orientation.jpg" alt="The road to campus" height="100%" width="100%">
+                            <img class="mobile-img" src="resources/images/information-orientation-mobile.jpg" alt="The road to campus">
+                            <img class="main-img" src="resources/images/information-orientation.jpg" alt="The road to campus" height="100%" width="100%">
                             <div class="text">
-                                <h2 class="text">Orientation date</h2>
+                                <h2>Orientation date</h2>
                                 <p>Tue 10/11 & Wed 10/12: 8am-3pm <br></p>
                                 <p class="link"><a href="#more">Read more</a></p>
                             </div>
                         </div>
                         <div class="inf-block">
                             <div class="inf-block-image">
-                                <img src="resources/images/information-campus.jpg" alt="Our campus" height="100%" width="100%">
+                                <img class="mobile-img" src="resources/images/information-campus-mobile.jpg" alt="Our campus">
+                                <img class="main-img" src="resources/images/information-campus.jpg" alt="Our campus" height="100%" width="100%">
                                 <div class="text">
-                                    <h2 class="text">Our campus</h2>
+                                    <h2>Our campus</h2>
                                     <p>Find which is close by you<br></p>
                                     <p class="link"><a href="#more">Read more</a></p>
                                 </div>
                             </div>
                             <div class="inf-block">
                                 <div class="inf-block-image">
-                                    <img src="resources/images/information-guest-lecture.jpg" alt="Our lecturer" height="100%" width="100%">
+                                    <img class="mobile-img" src="resources/images/information-guest-lecture-mobile.jpg" alt="Our lecturer">
+                                    <img class="main-img" src="resources/images/information-guest-lecture.jpg" alt="Our lecturer" height="100%" width="100%">
                                     <div class="text">
-                                        <h2 class="text">Our guest lecture</h2>
+                                        <h2>Our guest lecture</h2>
                                         <p>Join a keynote with Oliver Sack<br>about music in medical treatment<br></p>
                                         <p class="link"><a href="#more">Read more</a></p>
                                     </div>
@@ -108,45 +111,45 @@
 
 
             <div class="learning">
-                <h1 class="text">Start learning</h1>
+                <h2 class="text">Start learning</h1>
                 <div class="containers">
                     <div class="container">
                         <img src="resources/images/course-software.jpg" alt="Software course">
-                        <h1 class="text">Software engineering</h1>
+                        <h3 class="text">Software engineering</h1>
                         <p>COURSES</p>
                         <p>Web Development, Mobile<br>Development, iOT, APIs</p>
                     </div>
                     <div class="container">
                         <img src="resources/images/course-computer-art.jpg" alt="Computer art">
-                        <h1 class="text">Computer art</h1>
+                        <h3 class="text">Computer art</h1>
                         <p>COURSES</p>
                         <p>Imaging & Design, Web Design,
                         Motion Graphics & Visual Effects</p>
                     </div>
                     <div class="container">
                         <img src="resources/images/course-design.jpg" alt="Design course">
-                        <h1 class="text">Design</h1>
+                        <h3 class="text">Design</h1>
                         <p>COURSES</p>
                         <p>User Experience Design, User
                         Research, Visual Design</p>
                     </div>
                     <div class="container">
                         <img src="resources/images/course-data.jpg" alt="Data course">
-                        <h1 class="text">Data</h1>
+                        <h3 class="text">Data</h1>
                         <p>COURSES</p>
                         <p>Data Science, Big Data, SQL, Data
                         Visualization</p>
                     </div>
                     <div class="container">
                         <img src="resources/images/course-business.jpg" alt="Business course">
-                        <h1 class="text">Business</h1>
+                        <h3 class="text">Business</h1>
                         <p>COURSES</p>
                         <p>Product Development, Business
                         Development, Startup</p>
                     </div>
                     <div class="container">
                         <img src="resources/images/course-marketing.jpg" alt="Marketing course">
-                        <h1 class="text">Marketing</h1>
+                        <h3 class="text">Marketing</h1>
                         <p>COURSES</p>
                         <p>Analytics, Content Marketing,
                             Mobile Marketing</p>
@@ -156,13 +159,12 @@
 
 
             <div class="exhibit">
-                
-                <h1 class="text1">Thesis exhibit</h1>
+                <h2 class="text1">Thesis exhibit</h2>
                 <div class="rest">
                     <div class="banner">
-                        <img src="resources/videos/thesis.mp4" alt="Exhibit"  width="100%" height="100%">
+                        <video src="resources/videos/thesis.mp4" alt="Exhibit"  width="100%" height="100%" autoplay>
                         <div class="text">
-                        <h1>Reimagine urban</h1> 
+                        <h3>Reimagine urban</h3> 
                         <p>"Curabitur vitae liber in ipsum porttitor cosequat. Aliquam et commodo lectus,<br>
                         nec cosequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam<br>
                         eget magna laoreet, efficitur dolor consequat, tristique ligula."<br><br></p>
@@ -173,7 +175,7 @@
                                 <div class="inf-block-image">
                                     <img src="resources/images/thesis-now-and-then.jpg" alt="New York" height="100%" width="100%">
                                     <div class="text">
-                                        <h2 class="text">Now and then</h2>
+                                        <h4 class="text">Now and then</h4>
                                         <p>Research study about New York<br></p>
                                         <p class="link"><a href="#more">Read more</a></p>
                                     </div>
@@ -182,7 +184,7 @@
                                     <div class="inf-block-image">
                                         <img src="resources/images/thesis-fisma.jpg" alt="Design showcase" height="100%" width="100%">
                                         <div class="text">
-                                            <h2 class="text">Fisma: Design and prototype</h2>
+                                            <h4 class="text">Fisma: Design and prototype</h4>
                                             <p>Designer showcase of new<br>prototype product<br></p>
                                             <p class="link"><a href="#more">Read more</a></p>
                                         </div>
@@ -198,11 +200,11 @@
 
 
         <footer>
-            <h3 class="text" id="footer-left">@2021 Colmar Academy. All rights reserved</h3>
+            <h6 class="text" id="footer-left">@2021 Colmar Academy. All rights reserved</h6>
             <div class="text" id="footer-right">
                 <ul>
-                <li><h3><a href="#terms">Terms</a></h3></li>
-                <li><h3><a href="#privacy">Privacy</a></h3></li>
+                <li><h6><a href="#terms">Terms</a></h6></li>
+                <li><h6><a href="#privacy">Privacy</a></h6></li>
                 </ul>
             </div>
         </footer>
